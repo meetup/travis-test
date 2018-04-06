@@ -1,3 +1,6 @@
+env:
+  global:
+    - CI_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
 
 script:
   - "👋..."
