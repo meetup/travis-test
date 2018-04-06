@@ -3,7 +3,7 @@ env:
     - CI_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
 
 script:
-  - "👋..."
+  - echo "👋..."
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
