@@ -19,7 +19,6 @@ after_success:
   - >
     [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] &&
     git tag $GIT_TAG -f -a -m "Version $GIT_TAG built by Travis CI - https://travis-ci.com/$TRAVIS_REPO_SLUG/jobs/$TRAVIS_JOB_ID"
-    || true
   - >
     [ "${TRAVIS_PULL_REQUEST}" = "false" ] && [ "${TRAVIS_BRANCH}" = "master" ] &&
-    git push -q $GIT_TAG || true
+    git push -q $GIT_TAG
