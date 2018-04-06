@@ -1,6 +1,6 @@
 
 script:
-  - "👋"
+  - "👋..."
 
 after_success:
   - git config --global user.email "builds@travis-ci.com"
